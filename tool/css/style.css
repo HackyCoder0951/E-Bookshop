@@ -1,0 +1,1057 @@
+
+/*=== google font ===*/
+/*@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');*/
+
+/*=== Custom Fonts ===*/
+@font-face
+{
+    font-family: myfont;
+    font-weight: 700;
+    src:url(../../tool/fonts/Hind-Bold.ttf) format("truetype");
+    
+}
+@font-face
+{
+    font-family: myfont;
+    font-weight: 300;
+    src: url(../../tool/fonts/Hind-Light.ttf) format("truetype");  
+}
+@font-face
+{
+    font-family: myfont;
+    font-weight: 500;
+    src: url(../../tool/fonts/Hind-Medium.ttf) format("truetype");  
+}
+@font-face
+{
+    font-family: myfont;
+    font-weight: 600;
+    src: url(../../tool/fonts/Hind-SemiBold.ttf) format("truetype");  
+}
+@font-face
+{
+    font-family: myfont;
+    font-weight: 400;
+    src: url(../../tool/fonts/Hind-Regular.ttf) format("truetype");  
+}
+
+/*========== Base CSS ==============*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+   
+    font-family: myfont;
+    /*font-family: 'Hind', sans-serif;*/
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .6px;
+    color: #333;
+}
+/* #word-break
+{
+    word-break: break-word;
+} */
+p, a, b, span
+{
+    word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    word-break: break-word;
+}
+.section-padding {
+    padding: 20px 0;
+}
+.section-title {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.section-title a
+{
+    color: #555;
+    transition: .4s;
+}
+.section-title a:hover
+{
+    color: #333;
+}
+
+
+/*====== Header Area CSS ======= */
+.header-area {
+    z-index: 10;
+}
+
+.header-absoulate {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hearder-top {
+    background-color: #F6F7F8;
+    color: #30323A;
+    padding: 2px 0;
+    border-bottom: 1px solid #F8694A;
+    box-shadow: 0px 6px 6px -6px rgb(0, 0, 0, 0.3);
+}
+
+.social-icon {
+    text-align: right;
+}
+
+.social-icon a {
+    color: #1E2225;
+    margin: 0 3px;
+}
+
+.lname a {
+    font-size: 30px;
+    color: #F8694A;
+    font-weight: 700;
+}
+
+.lname span {
+    color: #1E2225;
+}
+.lname span img {
+    width: 32px;
+}
+.welcome-tx {
+    font-size: 13px;
+}
+
+.btn-login {
+    margin: 3px 3px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: #F8694A;
+    border-radius: 3px;
+    font-weight: 700;
+    border: 1px solid #F8694A;
+    transition: .4s;
+}
+
+.btn-login:hover {
+    background-color: #F8694A;
+    color: #fff;
+}
+
+.ic-cart a {
+    color: #F8694A;
+    margin-top: 3px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 12px;
+    border: 1px solid #F8694A;
+    border-radius: 3px;
+    transition: .4s;
+    position: relative;
+}
+.ic-cart a:hover {
+    background: #F2F3F5;
+}
+.ic-cart {
+    text-align: right;
+}
+.cart-count {
+    background: #F8694A;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 8px;
+    top: -6px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 18px;
+    font-weight: 600;
+    font-size: 12px;
+}
+/*======= Menu area CSS ======*/
+.menu-area {
+    background: #30323A;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    display: block;
+    padding: 3px 10px;
+    text-align: left;
+    transition: .4s;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu ul li:hover a {
+    color: #F8694A;
+}
+.menu {
+    padding: 8px 0;
+    position: relative;
+}
+
+.btn-user {
+    position: absolute;
+    right: -5px;
+    border-radius: 3px;
+}
+.btn-user:hover
+{
+    background-color: #30323a21;
+}
+
+.header-mid {
+    padding: 15px 0;
+}
+
+/*=== Onclick Drop-down ===*/
+.ctg-btn {
+    display: block;
+    padding: 11px 16px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #F8694A;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ctg-btn:hover {
+    color: #fff;
+}
+#m-list {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.onclick-ctg{
+    margin: 0;
+    padding: 0;
+}
+.onclick-ctg ul {
+    position: absolute;
+    background: #30323A;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+.onclick-ctg ul li {
+    list-style: none;
+    border-bottom: 1px solid #505050;
+}
+.onclick-ctg ul li a {
+    color: #fff;
+    padding: 12px 15px;
+    display: block;
+    text-transform: uppercase;
+    transition: .4s;
+    font-size: 14px;
+}
+.onclick-ctg ul li a:hover {
+    background-color: #505050;
+}
+.dropdown-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*========= Slider area CSS =========*/
+.slider-bg-1 {
+    background-image: url(../../tool/img/slider-image-1.jpg);
+}
+
+.slider-bg-2 {
+    background-image: url(../../tool/img/slider-image-2.jpg);
+}
+
+.slider-bg-3 {
+    background-image: url(../../tool/img/slider-image-3.jpg);
+}
+
+.slider-area {
+    position: relative;
+}
+
+.single-slider {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+}
+
+.single-slider:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    content: "";
+    opacity: 0.6;
+}
+
+.slider-area .owl-dots div {
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 50%;
+
+}
+
+.slider-area .owl-dots {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    bottom: 25px;
+}
+
+.slider-area .owl-dots div.active {
+    background: #F8694A;
+}
+.after-slider {
+    margin-top: -20px;
+}
+.slide-text {
+    color: #fff;
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+.fq {
+    color: #F8694A;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.slide-text p {
+    margin-top: 25px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.slide-text h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 1px solid #F8694A;
+    border-top: 1px solid #F8694A;
+    padding: 5px 0;
+}
+
+.search-bar {
+    text-align: right;
+    margin-top: 15px;
+}
+
+span input[type="search"] {
+    padding: 5px;
+    border: 1px solid #F8694A;
+    width: 70%;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+
+span.sb input[type="search"]:focus {
+    background: #f8f8f8;
+    color: #333;
+}
+
+span.sb input[type="submit"] {
+    border: none;
+    background-color: #F8694A;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+.btn-buy {
+    display: inline-block;
+    color: #fff;
+    background: #F8694A;
+    padding: 5px 12px;
+    border-radius: 5px;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.btn-buy:hover {
+    background-color: #30323A;
+    color: #fff;
+}
+
+/*========= Footer area CSS =========*/
+.brand-name .lnmae a {
+    color: #fff;
+}
+
+.footer-area-home {
+    background-color: #1E2225;
+    color: #dddd;
+    padding: 30px 0;
+}
+.footer-area
+{
+    background-color: #F6F7F8;
+    color: #30323A;
+    padding: 30px 0;
+}
+
+.brand-name .lname span {
+    color: #fff;
+}
+
+.widget h3 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.widget ul {
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul li {
+    list-style: none;
+}
+
+.widget ul li a {
+    color: #dddd;
+    display: inline-block;
+    padding: 5px 0;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.widget ul li a:hover {
+    color: #F8694A;
+}
+
+.footer-area-home #social-icon a
+{
+    color: #dddd;
+}
+#social-icon a {
+    color: #30323A;
+    font-size: 20px;
+}
+
+#social-icon span {
+    margin-right: 10px;
+}
+
+.brand-name p {
+    margin-top: 25px;
+}
+
+.copy-right {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    color: #dddd;
+}
+
+.copy-right p {
+    padding-top: 20px;
+}
+
+#s-footer {
+    text-align: center;
+}
+
+/* ========== Single Header CSS =======*/
+.single-header-a, .single-header-u
+{
+    box-shadow: 0px 8px 6px -6px #ddd;
+    padding: 5px 0;
+    text-align: center;
+}
+.single-header-u
+{
+    background: #F8F8F8;
+    border-bottom: 1px solid #ddd;
+}
+.single-header-a {
+    background: #30323A;
+    border-bottom: 1px solid #F8694A;
+}
+.single-header-a span {
+    color: #fff;
+}
+
+.single-header-a span a, .single-header-u span a {
+    color: #F8694A;
+}
+
+
+
+/*====================== Form CSS ==================*/
+.login-form,
+.reg-form, .my-form {
+    border: 1px solid #dddd;
+    padding: 40px 28px;
+    margin: 40px 0;
+    min-height: 450px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.form-header {
+    background: #30323A;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    text-transform: uppercase;
+}
+#form-header, #table-header {
+    border-bottom: 1px solid #F6F7F8;
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #30323A;
+}
+form {
+    margin-top: 45px;
+}
+form#user-search {
+    margin-top: 2px;
+}
+
+.my-btn, .my-btn-res {
+    background-color: #F8694A;
+    border: 1px solid #F8694A;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.my-btn-res
+{
+    background-color: crimson;
+}
+.my-btn:hover {
+    background: #F8694A;
+}
+
+#acc {
+    margin-top: 12px;
+}
+
+small a {
+    color: #6C757D;
+}
+
+.view-btn a {
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    color: #30323A;
+    text-transform: uppercase;
+    border: 1px solid #F8694A;
+    padding: 5px 12px;
+    border-radius: 3px;
+    transition: .4s;
+}
+.view-btn a:hover
+{
+    background-color: #F8694A;
+    color: #fff;
+}
+.view-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*======== Admin Dashboard CSS ========*/
+
+.admin-nav {
+    background-color: #30323A;
+    height: auto;
+    color: #fff;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.admin-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.admin-menu ul li {
+    list-style: none;
+    transition: .4s;
+}
+
+.admin-menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.user-name {
+    padding: 15px;
+    border-bottom: 1px solid #F8694A;
+    font-size: 20px;
+    text-transform: inherit;
+}
+
+.admin-menu ul li:hover {
+    background-color: #F8694A;
+}
+.admin-search {
+    position: relative;
+}
+
+.admin-search button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #F8694A;
+    padding: 8px 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+.admin-search button:hover
+{
+    background-color: #F8694A;
+    color: #fff;
+}
+
+.success-msg, .error-msg {
+    padding: 6px 15px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.success-msg{
+    background: #E6EDDE;
+    border: 1px solid #1111;
+    position: relative;
+    color: #444;
+}
+.error-msg{
+    background: #FFEBE8;
+    border: 1px solid #1111;
+    position: relative;
+    color: #444;
+}
+.cross {
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    font-size: 16px;
+}
+
+
+.user-menu ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.user-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.user-menu ul li a {
+    display: block;
+    color: #30323A;
+    padding: 6px 12px;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.user-menu ul li a:hover {
+    background-color: #E8E9EB;
+    color: #F8694A;
+}
+.user-menu-area {
+    background: #F7F8FA;
+    border-bottom: 1px solid #dddd;
+
+}
+
+.books-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.books-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.books-menu ul li a {
+    color: #30323A;
+    padding: 8px 10px;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.books-menu {
+    background: #F7F8FA;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #F8694A;
+}
+
+.books-menu ul li a:hover {
+    background: #E8E9EB;
+    color: #F8694A;
+}
+/*=========== Book Detail CSS ==========*/
+#book-img img {
+    width: 100%;
+    height: 300px;
+}
+.book-info div:nth-child(1) {
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.book-info div:nth-child(4) {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.book-info div:last-child {
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+#book-detail h5 {
+    text-transform: capitalize;
+    color: #555;
+}
+
+/* ========= Users Books view CSS ========= */
+#book-image img {
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+#single-book {
+    border: 1px solid #f0f0f0;
+    display: block;
+    transition: .4s;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0px 7px 6px -3px #f1f1f1;
+}
+
+#single-book:hover {
+    box-shadow: 0px 12px 6px -5px #dddd;
+    border: 1px solid #F8694A;
+}
+
+.con-flex >div {
+    display: flex;
+    flex-direction: row;
+}
+
+#addto-cart a {
+    color: #fff;
+    font-size: 14px;
+    background: #F8694A;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    position: absolute;
+    width: 100%;
+    top: 34%;
+    left: 0;
+    text-align: center;
+}
+#single-book:hover #addto-cart a
+{
+    opacity: 1;
+    visibility: visible;
+}
+#book-image:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #444;
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+}
+
+#single-book:hover #book-image:after {
+    opacity: .5;
+    visibility: visible;
+}
+#single-book:hover #book-image img{
+    animation-name: largesmall;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes largesmall{
+    to,from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.9);
+    }
+}
+.book-text {
+    padding: 5px;
+    text-align: center;
+}
+
+#book-name {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#price {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#book-details a {
+    display: block;
+    background: #00307f;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 6px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+#book-details a:hover {
+    background: #004ece;
+}
+#single-book:hover #book-details a
+{
+    opacity: 1;
+    visibility: visible;
+}
+.book-description {
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+/*===== CART CSS =====*/
+td.hidden {
+    position: absolute;
+}
+.qty
+{
+    width: 90px;
+}
+
+
+.pending-books {
+    position: relative;
+}
+
+.count-pending-books {
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    background: #F8694A;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+/*=== E-books Menu ===*/
+.ebooks-menu {
+    background: #F7F8FA;
+}
+
+.ebooks-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.ebooks-menu ul li {
+    list-style: none;
+}
+.ebooks-menu ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    color: #555;
+    border-bottom: 1px solid #E7E8EA;
+    transition: .4s;
+}
+
+.ebooks-menu ul li a:hover {
+    background: #E7E8EA;
+    border-bottom: 1px solid #F8694A;
+}
+.clickable-row, .clickable-div
+{
+    cursor: pointer;
+}
+
+.borderless tr, .borderless td, .borderless th 
+{
+    border: none !important;
+    padding-left: 0;
+}
+
+/*=== Admin Index ===*/
+.col-admin {
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+    transition: .3s;
+}
+
+.col-admin h6 {
+    color: #fff;
+}
+.clickable-div:hover
+{
+    background-color: #F8694A !important;
+}
+
+/*=== Pagination ===*/
+ul.custom-pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.custom-pagination li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+ul.custom-pagination a {
+    color: #666;
+    display: inline-block;
+    padding: 5px;
+    height: 28px;
+    width: 28px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    transition: .1s;
+}
+
+ul.custom-pagination a:hover {
+    background: #F6F7F8;
+}
+ul.custom-pagination li.active a {
+    background-color: #F8694A;
+    color: #fff;
+    border: 1px solid #F8694A;
+}
+ul.custom-pagination li.active a:hover
+{
+    color: #fff;
+}
+
+/*=== 404 page CSS ===*/
+._404-page {
+    text-align: center;
+}
+
+.error-type {
+    font-size: 80px;
+    color: #F8694A;
+    text-shadow: 3px 2px 4px #555;
+    font-weight: 600;
+}
+._404text {
+    font-size: 21px;
+}
+
+/*=== User Index css ===*/
+.user-info, .user-activities {
+    padding: 8px 15px;
+    border: 1px solid #F6F7F8;
+    min-height: 300px;
+}
+
+.user-info svg {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #999;
+}
+.user-books, .user-orders, .user-reviews {
+    margin-bottom: 10px;
+}
+
+
+.login-with {
+    margin-top: 50px;
+    text-align: center;
+}
+.fb
+{
+    background: #3B5998;
+    border: 1px solid #3B5998;
+}
