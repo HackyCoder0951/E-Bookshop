@@ -1,3 +1,9 @@
+# E-Bookshop
+->	First Create A Database named ebookshop in phpMyAdmin database
+->	Then Import the ebookshop.sql file
+->	Then Firstly Set URL HOST (http://localhost : port number ) Path to /E-Bookshop/application/config/config.php
+->	Then Set URL HOST (http://localhost : port number ) in Image Field of Database File of ebookshop.sql 
+
 # Online Bookshop & e-learning
 
 This is an online book shop project developed by **PHP framework (CodeIgniter)**. This application is like an online books market place, where user allows to buy and sell their books. Here user can also get different types of e-books as pdf books based on the category. This project also has many other cool functionalities.
