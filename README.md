@@ -1,9 +1,3 @@
-# E-Bookshop
--	First Create A Database named ebookshop in phpMyAdmin database
--	Then Import the ebookshop.sql file
--	Then Firstly Set URL HOST (http://localhost : port number ) Path to /E-Bookshop/application/config/config.php
--	Then Set URL HOST (http://localhost : port number ) in Image Field of Database File of ebookshop.sql 
-
 # Online Bookshop & e-learning
 
 This is an online book shop project developed by **PHP framework (CodeIgniter)**. This application is like an online books market place, where user allows to buy and sell their books. Here user can also get different types of e-books as pdf books based on the category. This project also has many other cool functionalities.
@@ -36,7 +30,16 @@ This project is developed by,
 - CSS framework (Bootstrap-4)
 - jQuery, JavaScript
 
-**Note:** The database name of this project is **"ebookshop"** and **ebookshop.sql** file is inside the **'tool'** folder. If you want to clone and use the project, then after cloning rename the base folder as **"E-Bookshop"**. Otherwise this application will not work properly. If you want to make change the base folder as you want, you have to change the base_url from config and also change .htaccess file. 
+**Note:** 
+# E-Bookshop
+-	First Create A Database named ebookshop in phpMyAdmin database
+-	Then Import the ebookshop.sql file
+-	Then Firstly Set URL HOST (http://localhost : port number ) Path to /E-Bookshop/application/config/config.php
+-	Then Set URL HOST (http://localhost : port number ) in Image Field of Database File of ebookshop.sql 
+-	The database name of this project is **"ebookshop"** and **ebookshop.sql** file is inside the **'tool'** folder. 
+-	If you want to clone and use the project, then after cloning rename the base folder as **"E-Bookshop"**. 
+-	Otherwise this application will not work properly. 
+-	If you want to make change the base folder as you want, you have to change the base_url from config and also change .htaccess file. 
 
 **Fell free to frok and cotributing in this project. For more query related to this project, contact me through email.**
 
