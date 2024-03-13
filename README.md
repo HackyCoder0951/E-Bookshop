@@ -39,7 +39,7 @@ This project is developed by,
 -	The database name of this project is **"ebookshop"** and **ebookshop.sql** file is inside the **'tool'** folder. 
 -	If you want to clone and use the project, then after cloning rename the base folder as **"E-Bookshop"**. 
 -	Otherwise this application will not work properly. 
--	If you want to make change the base folder as you want, you have to change the base_url from config and also change .htaccess file. 
+-	If you want to make change the base folder as you want, you have to change the base_url from /E-Bookshop/application/config/config.php and also change in **RewriteBase /e-bookshop/** in .htaccess file. 
 
 **Fell free to frok and cotributing in this project. For more query related to this project, contact me through email.**
 
